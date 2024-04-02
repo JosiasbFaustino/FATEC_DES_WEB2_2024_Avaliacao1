@@ -6,7 +6,8 @@ if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
     echo "<div class='container'>";
     echo "Você está logado como Portaria. <input type='button' value='Sair' onclick='logout()' class='button1'><br>";
     echo "<form method='get' action='registro.php'><input type='submit' value='Cadastrar Aluno/Veículo' class='button'></form><br>";
-    echo "<form method='get' action='visualizar_registros.php'><input type='submit' value='Visualizar Registros' class='button'></form>";
+    echo "<form method='get' action='visualizar_carros.php'><input type='submit' value='Visualizar Carros' class='button'></form>";
+    echo "<form method='get' action='visualizar_motos.php'><input type='submit' value='Visualizar Motos' class='button'></form>";
     echo "</div>";
 } else {
     // Se não estiver logado, exibir o formulário de login
@@ -59,3 +60,4 @@ function voltar() {
     window.location.href = 'index.php';
 }
 </script>
+
